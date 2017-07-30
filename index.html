@@ -1,25 +1,105 @@
 <!DOCTYPE html>
-<html>
-<link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Kotta+One" rel="stylesheet">
-<head>
-	<link rel="stylesheet" type="text/css" href="master.css">
-	<title>Adarsh Pathak</title>
-</head>
-<body>
-<div id="information">
-	<img id="profile_pic" src="15781691_1861376610759660_4136471885604642261_n.jpg">
-	<h1 >Adarsh Pathak</h1>
-	<h4>Loves to code | Web-Developer | Open-Source Contributor</h4>
-	<p>What's Up? I am a second year undergraduate engineering student from LNMIIT, pursuing B.tech in Mechatronics Engineering. I like to learn always new things.</p>
-	<div id="social_button">
-		<a href="https://www.facebook.com/adarsh.pathak.585559" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-		<a href="https://github.com/adarshp199877" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-		<a href="https://www.hackerrank.com/adarshp199877" target="_blank"><i class="fa fa-code" aria-hidden="true"></i></a>
-		<a href="https://www.linkedin.com/in/adarsh-pathak-52b002129/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><link rel="stylesheet" href="comming_soon_files/font-awesome.css">
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+#div1 {
+  font-size:48px;
+}
+.bgimg {
+    background-image: url('15781691_1861376610759660_4136471885604642261_n.jpg');
+    height: 100%;
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 40px;
+}
 
-	</div>
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    color: whitesmoke;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    color: red;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+</style>
+</head><body>
+
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>Sorry</p>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <div id="div1" class="fa">&#62033;</div>
+<script>
+function hourglass() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = "&#xf251;";
+  setTimeout(function () {
+      a.innerHTML = "&#xf252;";
+    }, 1000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf253;";
+    }, 2000);
+}
+hourglass();
+setInterval(hourglass, 3000);
+</script>
+    <hr>
+    <p>5 days left</p>
+  </div>
+  <div class="bottomleft">
+    <p>Website is under construction</p>
+  </div>
 </div>
-</body>
-</html>
+
+<script>
+var countDownDate = new Date("August 3, 2017 23:08:10").getTime();
+var countdownfunction = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+
+
+</body></html>
